@@ -18,9 +18,9 @@
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
 
-    <!-- Recipe Form -->
-    <script id="recipe-form" type="text/x-handlebars-template">
-      <form onsubmit="createRecipe();return false;">
+    <!-- Recipe Form Template -->
+    <script id="recipe-form-template" type="text/x-handlebars-template">
+      <form id="recipe-form" onsubmit="createRecipe();return false;">
         Recipe Name: <input id="name" type="text"><br>
         Description: <input id="description" type="text"><br>
         Ingredients:<br>
@@ -30,11 +30,6 @@
         <input name="ingredients" type="text"><br>
         <input name="ingredients" type="text"><br>
       </form>
-    </script>
-
-    <!-- Recipe Form Template -->
-    <script id="recipe-form-template" type="text/x-handlebars-template">
-
     </script>
     <!-- Recipe Template -->
     <script id="recipe-template" type="text/x-handlebars-template">
