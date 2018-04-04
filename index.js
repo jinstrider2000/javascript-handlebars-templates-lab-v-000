@@ -9,3 +9,14 @@ function init() {
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
+function createRecipe() {
+  var template = Handlebars.compile(document.getElementById('recipe-template'));
+}
+
+function displayEditForm() {
+  var template = Handlebars.compile(document.getElementById("recipe-form-template");
+}
+
+function updateRecipe() {
+  var template = Handlebars.compile(document.getElementById('recipe-template'));
+}
