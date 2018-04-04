@@ -8,6 +8,16 @@
   </head>
   <body>
     <main id="main">
+      <form id="recipe-form" onsubmit="createRecipe();return false;">
+        Recipe Name: <input id="name" type="text"><br>
+        Description: <input id="description" type="text"><br>
+        Ingredients:<br>
+        <input name="ingredients" type="text"><br>
+        <input name="ingredients" type="text"><br>
+        <input name="ingredients" type="text"><br>
+        <input name="ingredients" type="text"><br>
+        <input name="ingredients" type="text"><br>
+      </form>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
@@ -20,16 +30,7 @@
 
     <!-- Recipe Form Template -->
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form id="recipe-form" onsubmit="createRecipe();return false;">
-        Recipe Name: <input id="name" type="text"><br>
-        Description: <input id="description" type="text"><br>
-        Ingredients:<br>
-        <input name="ingredients" type="text"><br>
-        <input name="ingredients" type="text"><br>
-        <input name="ingredients" type="text"><br>
-        <input name="ingredients" type="text"><br>
-        <input name="ingredients" type="text"><br>
-      </form>
+      
     </script>
     <!-- Recipe Template -->
     <script id="recipe-template" type="text/x-handlebars-template">
