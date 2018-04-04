@@ -34,7 +34,14 @@
     </script>
     <script id="recipe-template" type="text/x-handlebars-template">
       <h2>{{name}}</h2>
-      <a href=""></a>
+      {{> recipeDetailsPartial }}
+      <a href="displayEditForm();">Edit Recipe</a>
+    </script>
+    <script id="recipe-details-partial" type="text/x-handlebars-template">
+      <h3>{{description}}</h3>
+      {{#each ingredients}}
+        <h4>{{displayIngredient}}</h4>
+      {{/each}}
     </script>
   </body>
 
